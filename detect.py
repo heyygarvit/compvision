@@ -10,7 +10,7 @@ from cv2 import rectangle
 def swap_faces(image, detector):
     rec = detector.detectMultiScale(   
         image,
-        scaleFactor = 1.4
+        scaleFactor = 1.3
     )
 
     for rectangle1,rectangle2  in zip(rec[::2],rec[1::2]):
